@@ -1,6 +1,27 @@
-<ul>
-  <li ng-repeat="recipe in $ctrl.recipes">
-    <span>{{recipe.name}}</span>
-    <p>{{recipe.content}}</p>
-  </li>
-</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+      <p>
+        Search:
+        <input ng-model="$ctrl.query" />
+      </p>
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="stars">Stars</option>
+        </select>
+      </p>
+   </div>
+    <div class="col-md-10">
+      <!--Body content-->
+      <ul>
+        <li ng-repeat="recipe in $ctrl.recipes | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+          <span>{{recipe.name}} (Stars: {{recipe.stars}})</span>
+          <p>{{recipe.content}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
