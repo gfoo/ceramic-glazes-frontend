@@ -1,0 +1,10 @@
+{
+  "name": "angular-sandbox",
+  "version": "0.0.1",
+  "description": "A sand box for AngularJS",
+  "repository": "https://github.com/gfoo/AngularJSSandBox.git",
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.x"
+  }
+}
