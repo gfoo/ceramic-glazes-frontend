@@ -1,3 +1,5 @@
-angular.module('ceramicGlazes', [
+angular.module('ceramicGlazesApp', [
+  'ngRoute',
+  'recipeDetail',
   'recipeList'
 ]);

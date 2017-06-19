@@ -1,10 +1,12 @@
 {
-  "name": "angular-sandbox",
+  "name": "ceramicGlazesApp",
   "version": "0.0.1",
-  "description": "A sand box for AngularJS",
-  "repository": "https://github.com/gfoo/AngularJSSandBox.git",
+  "description": "Ceramic glazes repository for potters",
+  "repository": "https://github.com/gfoo/ceramic-glazes-frontend.git",
   "private": true,
   "dependencies": {
-    "angular": "1.6.x"
+    "angular": "1.6.x",
+    "angular-route": "1.6.x",
+    "bootstrap": "3.3.x"
   }
 }

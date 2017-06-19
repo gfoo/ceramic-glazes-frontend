@@ -2,3 +2,12 @@ body {
   padding-top: 20px;
 }
 
+.recipes {
+  list-style: none;
+}
+
+.recipes li {
+  clear: both;
+  height: 115px;
+  padding-top: 15px;
+}

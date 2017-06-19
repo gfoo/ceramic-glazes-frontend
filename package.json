@@ -1,9 +1,9 @@
 {
-  "name": "AngularJSSandBox",
+  "name": "ceramicGlazesApp",
   "private": true,
   "version": "0.0.1",
-  "description": "A sand box for AngularJS",
-  "repository": "https://github.com/gfoo/AngularJSSandBox.git",
+  "description": "Ceramic glazes repository for potters",
+  "repository": "https://github.com/gfoo/ceramic-glazes-frontend.git",
   "devDependencies": {
     "bower": "^1.8.0",
     "http-server": "^0.10.0"

@@ -16,9 +16,10 @@
    </div>
     <div class="col-md-10">
       <!--Body content-->
-      <ul>
-        <li ng-repeat="recipe in $ctrl.recipes | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-          <span>{{recipe.name}} (Stars: {{recipe.stars}})</span>
+      <p>Ceramic Glazes:</p>
+      <ul class="recipes">
+        <li ng-repeat="recipe in $ctrl.recipes | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+          <a href="#!/recipes/{{recipe.id}}">{{recipe.name}} (Stars: {{recipe.stars}})</a>
           <p>{{recipe.content}}</p>
         </li>
       </ul>
