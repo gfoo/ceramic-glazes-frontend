@@ -1,10 +1,14 @@
 angular.
   module('recipeDetail').
   component('recipeDetail', {
-    template: 'TBD: Detail view for <span>{{$ctrl.recipeId}}</span>',
-    controller: ['$routeParams',
-      function RecipeDetailController($routeParams) {
-        this.recipeId = $routeParams.recipeId;
+    templateUrl: 'recipe-detail/recipe-detail.template.html',
+    controller: ['$http','$routeParams',
+      function RecipeDetailController($http,$routeParams) {
+        var self = this;
+
+        $http.get('data/' + $routeParams.recipeId + '.json').then(function(response) {
+          self.recipe = response.data;
+        });
       }
     ]
   });
