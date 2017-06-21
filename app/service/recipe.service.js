@@ -1,13 +1,21 @@
 angular.
-  module('RecipeService').
-  factory('Recipe', ['$resource',
-    function($resource) {
-      return $resource('data/:recipeId.json', {}, {
-        query: {
-          method: 'GET',
-          params: {recipeId: 'recipes'},
-          isArray: true
+  module('recipeService').
+  factory('Recipe', ['$http', function($http) {
+    var factory = {};
+    factory.query = function() {
+      return $http.get('http://localhost:8081/ceramic-glazes/v1/recipes').
+        then(function(response) {
+          return response.data;
         }
-      });
+      );
+    };
+    factory.get = function(id) {
+      return $http.get('http://localhost:8081/ceramic-glazes/v1/recipes/'+id).
+        then(function(response) {
+          return response.data;
+        }
+      );
+    };
+    return factory;
     }
   ]);

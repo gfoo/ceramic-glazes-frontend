@@ -1,4 +1,4 @@
 angular.module('recipeDetail', [
   'ngRoute',
-  'RecipeService'
+  'recipeService'
 ]);

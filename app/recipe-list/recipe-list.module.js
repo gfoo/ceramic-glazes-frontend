@@ -1,1 +1,1 @@
-angular.module('recipeList', ['RecipeService']);
+angular.module('recipeList', ['recipeService']);

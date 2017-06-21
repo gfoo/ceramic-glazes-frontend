@@ -5,7 +5,9 @@ angular.
     controller: ['Recipe','$routeParams',
       function RecipeDetailController(Recipe,$routeParams) {
         var self = this;
-        self.recipe = Recipe.get({recipeId: $routeParams.recipeId});
+        self.recipe = Recipe.get($routeParams.recipeId).then(function(recipe){
+              self.recipe = recipe;
+        });
       }
     ]
   });
