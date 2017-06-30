@@ -1,7 +1,7 @@
 angular.
   module('recipeList').
   component('recipeList', {
-    templateUrl: 'recipe-list/recipe-list.template.html',
+    templateUrl: 'views/recipe-list/recipe-list.template.html',
     controller: ['Recipe', '$http',
       function RecipeListController(Recipe,$http) {
         var self = this;

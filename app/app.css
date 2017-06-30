@@ -1,5 +1,5 @@
 body {
-  padding-top: 20px;
+  padding-top: 70px;
 }
 
 .recipes {
@@ -10,4 +10,10 @@ body {
   clear: both;
   height: 50px;
   padding-top: 15px;
+}
+
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
 }

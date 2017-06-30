@@ -1,7 +1,7 @@
 angular.
   module('recipeDetail').
   component('recipeDetail', {
-    templateUrl: 'recipe-detail/recipe-detail.template.html',
+    templateUrl: 'views/recipe-detail/recipe-detail.template.html',
     controller: ['Recipe','$routeParams',
       function RecipeDetailController(Recipe,$routeParams) {
         var self = this;
